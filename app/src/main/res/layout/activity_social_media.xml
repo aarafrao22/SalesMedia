@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMediaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-28dp"
+        android:background="@drawable/bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/white_r"
+            android:gravity="center"
+            app:layout_constraintDimensionRatio="1,1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_left_s_line"
+                app:tint="#139DFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="28dp"
+            android:includeFontPadding="false"
+            android:text="Social Media Handles of"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:includeFontPadding="false"
+            android:text="SALEZMEDIA!!"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgMain"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-68dp"
+        android:src="@drawable/img"
+        app:civ_border_color="#139DFF"
+        app:civ_border_width="6dp"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="26dp"
+        android:background="@drawable/bg_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMain">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instagram"
+            app:layout_constraintBottom_toBottomOf="@+id/txtInstaUname"
+            app:layout_constraintDimensionRatio="1,1"
+            app:layout_constraintEnd_toStartOf="@+id/txtInstaUname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtInsta" />
+
+        <TextView
+            android:id="@+id/txtInsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="22dp"
+            android:includeFontPadding="false"
+            android:text="Instagram Account"
+            android:textColor="#DB345F"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtInstaUname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="salezmedia"
+            android:textColor="#DB345F"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtInsta"
+            app:layout_constraintTop_toBottomOf="@+id/txtInsta" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="#DB345F"
+        android:includeFontPadding="false"
+        android:text="Follow Us"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:cornerRadius="28dp"
+        app:icon="@drawable/user_follow_fill"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/bg_outline_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_yt"
+            app:layout_constraintBottom_toBottomOf="@+id/txtInstaUname2"
+            app:layout_constraintDimensionRatio="1,1"
+            app:layout_constraintEnd_toStartOf="@+id/txtInstaUname2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtInsta2" />
+
+        <TextView
+            android:id="@+id/txtInsta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="22dp"
+            android:includeFontPadding="false"
+            android:text="Youtube Account"
+            android:textColor="#D4525A"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtInstaUname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Salezmedia"
+            android:textColor="#D4525A"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtInsta2"
+            app:layout_constraintTop_toBottomOf="@+id/txtInsta2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="#D4525A"
+        android:includeFontPadding="false"
+        android:text="Subscribe"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:cornerRadius="28dp"
+        app:icon="@drawable/user_follow_fill"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
