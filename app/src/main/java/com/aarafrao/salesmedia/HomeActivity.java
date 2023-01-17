@@ -2,6 +2,7 @@ package com.aarafrao.salesmedia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -34,18 +35,21 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.item_sm:
-                Toast.makeText(this, "SM", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SocialMediaActivity.class));
                 break;
+
             case R.id.item_cu:
-                Toast.makeText(this, "SM", Toast.LENGTH_SHORT).show();
-
+                startActivity(new Intent(this, ContactUsActivity.class));
                 break;
+
             case R.id.item_updates:
-                Toast.makeText(this, "SM", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(this, "WEB", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, WebActivity.class).putExtra("url", "https://www.fiverr.com/aarafrao22"));
                 break;
+
             case R.id.item_login:
                 Toast.makeText(this, "SM", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, WebActivity.class).putExtra("url", "https://www.fiverr.com/aarafrao22"));
                 break;
         }
     }
