@@ -53,7 +53,6 @@ public class ContactUsActivity extends AppCompatActivity {
                 Log.e("firebase", "Error getting data", task.getException());
             } else {
                 txtMail.setText(String.valueOf(task.getResult().getValue()));
-
             }
         });
         mDatabase.child("Contacts").child("WaLink").get().addOnCompleteListener(task -> {
