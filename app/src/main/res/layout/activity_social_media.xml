@@ -91,9 +91,9 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/instagram"
-            app:layout_constraintBottom_toBottomOf="@+id/txtInstaUname"
+            app:layout_constraintBottom_toBottomOf="@+id/txtWaNo"
             app:layout_constraintDimensionRatio="1,1"
-            app:layout_constraintEnd_toStartOf="@+id/txtInstaUname"
+            app:layout_constraintEnd_toStartOf="@+id/txtWaNo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txtInsta" />
 
@@ -112,7 +112,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtInstaUname"
+            android:id="@+id/txtWaNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
@@ -127,7 +127,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/btnMsg"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="46dp"
@@ -160,15 +160,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+        app:layout_constraintTop_toBottomOf="@+id/btnMsg">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:src="@drawable/img_yt"
-            app:layout_constraintBottom_toBottomOf="@+id/txtInstaUname2"
+            app:layout_constraintBottom_toBottomOf="@+id/txtMail"
             app:layout_constraintDimensionRatio="1,1"
-            app:layout_constraintEnd_toStartOf="@+id/txtInstaUname2"
+            app:layout_constraintEnd_toStartOf="@+id/txtMail"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txtInsta2" />
 
@@ -187,7 +187,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtInstaUname2"
+            android:id="@+id/txtMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
@@ -202,7 +202,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton1"
+        android:id="@+id/btnMail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="46dp"

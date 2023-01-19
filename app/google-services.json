@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "514809527889",
+    "firebase_url": "https://salezmedia-admin-3906e-default-rtdb.firebaseio.com",
+    "project_id": "salezmedia-admin-3906e",
+    "storage_bucket": "salezmedia-admin-3906e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514809527889:android:16ca656700cb4a1bb40270",
+        "android_client_info": {
+          "package_name": "com.aarafrao.salesmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514809527889-2k3noib7nfqghed078u10t0ejgj7fese.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-NwXOADPY-SImLMup6Sao_1jyYMcVAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514809527889-2k3noib7nfqghed078u10t0ejgj7fese.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514809527889:android:f50dc6e68e5a2003b40270",
+        "android_client_info": {
+          "package_name": "com.aarafrao.salezmediaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514809527889-2k3noib7nfqghed078u10t0ejgj7fese.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-NwXOADPY-SImLMup6Sao_1jyYMcVAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514809527889-2k3noib7nfqghed078u10t0ejgj7fese.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
